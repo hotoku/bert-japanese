@@ -1,3 +1,20 @@
+# M1 Macでの動作確認
+
+以下の手順で環境を構築した。[2022-11-18]
+
+1. pytorchの環境づくり: https://towardsdatascience.com/gpu-acceleration-comes-to-pytorch-on-m1-macs-195c399efcc1
+   1. 上のリンクの通りに環境を作る
+1. `masked_lm_example.ipynb`を実行し、足らないパッケージをインストール
+
+↓historyから`pip install`を抜粋。おそらく、この4つのコマンドで作ったと思われる。
+
+```
+ 3656  2022-11-18 18:28:47  pip install transformers datasets
+ 3672  2022-11-18 18:46:38  pip install sentencepiece
+ 3673  2022-11-18 18:47:02  pip install fugashi
+ 3674  2022-11-18 18:47:19  pip install unidic_lite
+```
+
 # Pretrained Japanese BERT models
 
 This is a repository of pretrained Japanese BERT models.
