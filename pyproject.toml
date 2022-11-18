@@ -3,12 +3,13 @@ name = "bert-japanese"
 version = "0.1.0"
 description = ""
 authors = ["Yasunori Horikoshi <hotoku@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "bert_japanese"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 
-[tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
